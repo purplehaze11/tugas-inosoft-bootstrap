@@ -1,0 +1,38 @@
+:root {
+	--background: #f7f7f7;
+	--background-card: #eaeaea;
+	--background-footer: #b40a1d;
+	--color-primary: #ec1224;
+	--color-secondary: white;
+	--color-content: #333333;
+	--font-lg: 5rem;
+	--font-md: 3.5rem;
+	--font-sm: 2rem;
+	--margin-content: 4rem 6rem;
+	--padding-content: 0 6rem;
+	--topbottom-space: 4rem 0;
+	--border-line: 2px solid #ec1224;
+}
+
+header {
+	& #cart {
+		width: 40px;
+	}
+
+	& img {
+		width: 100%;
+	}
+}
+
+.card {
+	.rating {
+		& img {
+			width: 8%;
+		}
+	}
+}
+
+footer {
+	background-color: var(--background-footer);
+	color: var(--color-secondary);
+}
