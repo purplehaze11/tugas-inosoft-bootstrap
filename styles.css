@@ -5,16 +5,28 @@
 	--color-primary: #ec1224;
 	--color-secondary: white;
 	--color-content: #333333;
-	--font-lg: 5rem;
-	--font-md: 3.5rem;
-	--font-sm: 2rem;
-	--margin-content: 4rem 6rem;
-	--padding-content: 0 6rem;
-	--topbottom-space: 4rem 0;
+	--color-yellow: #fff200;
 	--border-line: 2px solid #ec1224;
 }
 
+body {
+	background-color: var(--background);
+}
+
 header {
+	& #nav-border {
+		border-bottom: var(--border-line);
+	}
+
+	& .navbar-brand {
+		color: var(--color-primary);
+	}
+
+	& span {
+		color: var(--color-yellow);
+		background-color: var(--color-content);
+	}
+
 	& #cart {
 		width: 40px;
 	}
@@ -22,9 +34,28 @@ header {
 	& img {
 		width: 100%;
 	}
+
+	& #btn-masuk {
+		border: var(--border-line);
+		color: var(--color-primary);
+	}
+
+	& #btn-daftar {
+		background-color: var(--color-primary);
+		color: var(--background);
+		border: var(--border-line);
+	}
+}
+
+#store-products {
+	.col {
+		margin: 0.5rem;
+	}
 }
 
 .card {
+	margin: 0;
+
 	.rating {
 		& img {
 			width: 8%;

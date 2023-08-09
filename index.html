@@ -20,9 +20,12 @@
 	</head>
 	<body>
 		<header>
-			<nav class="navbar navbar-expand-lg bg-body-tertiary px-4">
-				<div class="container-fluid">
-					<a class="navbar-brand">TOSALine</a>
+			<nav class="navbar navbar-expand-lg px-4">
+				<div
+					id="nav-border"
+					class="container-fluid pb-2"
+				>
+					<a class="navbar-brand">TOSA<span>Line</span></a>
 					<div class="d-flex">
 						<div class="dropdown">
 							<button
@@ -84,13 +87,15 @@
 					</div>
 					<form>
 						<button
-							class="btn btn-outline-success me-2"
+							id="btn-masuk"
+							class="btn me-2"
 							type="button"
 						>
 							Masuk
 						</button>
 						<button
-							class="btn btn-outline-secondary"
+							id="btn-daftar"
+							class="btn"
 							type="button"
 						>
 							Daftar
@@ -110,103 +115,293 @@
 					alt="..."
 				/>
 			</section>
+
 			<section
+				class="container-fluid my-4"
 				id="sec-content"
-				class="m-5"
 			>
-				<div class="row g-4">
-					<div class="col">
+				<div class="row g-0">
+					<div class="card col-4 col-lg-2 col-sm-3 col-xs-6 me-4 p-3">
+						<h2 class="card-title">Filter</h2>
+						<p class="d-inline-flex gap-1">
+							<a
+								data-bs-toggle="collapse"
+								href="#collapseExample"
+								role="button"
+								aria-expanded="false"
+								aria-controls="collapseExample"
+							>
+								Link with href
+							</a>
+						</p>
 						<div
-							class="card"
-							style="width: 12rem"
+							class="collapse.show"
+							id="collapseExample"
 						>
-							<img
-								src="https://placehold.co/600x400"
-								class="card-img-top"
-								alt="..."
-							/>
-							<div class="card-body">
-								<h5 class="card-title">Sepatu</h5>
-								<p class="card-text">Rp180.000</p>
-								<p>Bandung</p>
-								<div class="rating d-flex">
-									<img
-										src="./assets/star-svgrepo-com.svg"
-										alt=""
-									/>
-									<p class="m-0">4.9 | Terjual 500+</p>
-								</div>
+							<div class="form-check">
+								<input
+									class="form-check-input"
+									type="checkbox"
+									value=""
+									id="flexCheckDefault"
+								/>
+								<label
+									class="form-check-label"
+									for="flexCheckDefault"
+								>
+									Jakarta
+								</label>
+							</div>
+							<div class="form-check">
+								<input
+									class="form-check-input"
+									type="checkbox"
+									value=""
+									id="flexCheckChecked"
+								/>
+								<label
+									class="form-check-label"
+									for="flexCheckChecked"
+								>
+									Bogor
+								</label>
+							</div>
+							<div class="form-check">
+								<input
+									class="form-check-input"
+									type="checkbox"
+									value=""
+									id="flexCheckChecked"
+								/>
+								<label
+									class="form-check-label"
+									for="flexCheckChecked"
+								>
+									Depok
+								</label>
+							</div>
+							<div class="form-check">
+								<input
+									class="form-check-input"
+									type="checkbox"
+									value=""
+									id="flexCheckChecked"
+								/>
+								<label
+									class="form-check-label"
+									for="flexCheckChecked"
+								>
+									Bandung
+								</label>
+							</div>
+							<div class="form-check">
+								<input
+									class="form-check-input"
+									type="checkbox"
+									value=""
+									id="flexCheckChecked"
+								/>
+								<label
+									class="form-check-label"
+									for="flexCheckChecked"
+								>
+									Serang
+								</label>
+							</div>
+							<div class="form-check">
+								<input
+									class="form-check-input"
+									type="checkbox"
+									value=""
+									id="flexCheckChecked"
+								/>
+								<label
+									class="form-check-label"
+									for="flexCheckChecked"
+								>
+									Tanggerang
+								</label>
+							</div>
+							<div class="form-check">
+								<input
+									class="form-check-input"
+									type="checkbox"
+									value=""
+									id="flexCheckChecked"
+								/>
+								<label
+									class="form-check-label"
+									for="flexCheckChecked"
+								>
+									Solo
+								</label>
+							</div>
+							<div class="form-check">
+								<input
+									class="form-check-input"
+									type="checkbox"
+									value=""
+									id="flexCheckChecked"
+								/>
+								<label
+									class="form-check-label"
+									for="flexCheckChecked"
+								>
+									Semarang
+								</label>
+							</div>
+							<div class="form-check">
+								<input
+									class="form-check-input"
+									type="checkbox"
+									value=""
+									id="flexCheckChecked"
+								/>
+								<label
+									class="form-check-label"
+									for="flexCheckChecked"
+								>
+									Surabaya
+								</label>
+							</div>
+							<div class="form-check">
+								<input
+									class="form-check-input"
+									type="checkbox"
+									value=""
+									id="flexCheckChecked"
+								/>
+								<label
+									class="form-check-label"
+									for="flexCheckChecked"
+								>
+									Medan
+								</label>
 							</div>
 						</div>
 					</div>
-					<div class="col">
-						<div
-							class="card"
-							style="width: 12rem"
-						>
-							<img
-								src="https://placehold.co/600x400"
-								class="card-img-top"
-								alt="..."
-							/>
-							<div class="card-body">
-								<h5 class="card-title">Sepatu</h5>
-								<p class="card-text">Rp180.000</p>
-								<p>Bandung</p>
-								<div class="rating d-flex">
-									<img
-										src="./assets/star-svgrepo-com.svg"
-										alt=""
-									/>
-									<p class="m-0">4.9 | Terjual 500+</p>
+
+					<div
+						id="store-products"
+						class="container col-8 col-lg-10 col-sm-9 col-xs-6 row mt-0"
+					>
+						<div class="col">
+							<div
+								class="card"
+								style="width: 12rem"
+							>
+								<img
+									src="https://placehold.co/600x400"
+									class="card-img-top"
+									alt="..."
+								/>
+								<div class="card-body">
+									<h5 class="card-title">Sepatu</h5>
+									<p class="card-text">Rp180.000</p>
+									<p>Bandung</p>
+									<div class="rating d-flex">
+										<img
+											src="./assets/star-svgrepo-com.svg"
+											alt=""
+										/>
+										<p class="m-0">4.9 | Terjual 500+</p>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col">
-						<div
-							class="card"
-							style="width: 12rem"
-						>
-							<img
-								src="https://placehold.co/600x400"
-								class="card-img-top"
-								alt="..."
-							/>
-							<div class="card-body">
-								<h5 class="card-title">Sepatu</h5>
-								<p class="card-text">Rp180.000</p>
-								<p>Bandung</p>
-								<div class="rating d-flex">
-									<img
-										src="./assets/star-svgrepo-com.svg"
-										alt=""
-									/>
-									<p class="m-0">4.9 | Terjual 500+</p>
+						<div class="col">
+							<div
+								class="card"
+								style="width: 12rem"
+							>
+								<img
+									src="https://placehold.co/600x400"
+									class="card-img-top"
+									alt="..."
+								/>
+								<div class="card-body">
+									<h5 class="card-title">Sepatu</h5>
+									<p class="card-text">Rp180.000</p>
+									<p>Bandung</p>
+									<div class="rating d-flex">
+										<img
+											src="./assets/star-svgrepo-com.svg"
+											alt=""
+										/>
+										<p class="m-0">4.9 | Terjual 500+</p>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col">
-						<div
-							class="card"
-							style="width: 12rem"
-						>
-							<img
-								src="https://placehold.co/600x400"
-								class="card-img-top"
-								alt="..."
-							/>
-							<div class="card-body">
-								<h5 class="card-title">Sepatu</h5>
-								<p class="card-text">Rp180.000</p>
-								<p>Bandung</p>
-								<div class="rating d-flex">
-									<img
-										src="./assets/star-svgrepo-com.svg"
-										alt=""
-									/>
-									<p class="m-0">4.9 | Terjual 500+</p>
+						<div class="col">
+							<div
+								class="card"
+								style="width: 12rem"
+							>
+								<img
+									src="https://placehold.co/600x400"
+									class="card-img-top"
+									alt="..."
+								/>
+								<div class="card-body">
+									<h5 class="card-title">Sepatu</h5>
+									<p class="card-text">Rp180.000</p>
+									<p>Bandung</p>
+									<div class="rating d-flex">
+										<img
+											src="./assets/star-svgrepo-com.svg"
+											alt=""
+										/>
+										<p class="m-0">4.9 | Terjual 500+</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div
+								class="card"
+								style="width: 12rem"
+							>
+								<img
+									src="https://placehold.co/600x400"
+									class="card-img-top"
+									alt="..."
+								/>
+								<div class="card-body">
+									<h5 class="card-title">Sepatu</h5>
+									<p class="card-text">Rp180.000</p>
+									<p>Bandung</p>
+									<div class="rating d-flex">
+										<img
+											src="./assets/star-svgrepo-com.svg"
+											alt=""
+										/>
+										<p class="m-0">4.9 | Terjual 500+</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div
+								class="card"
+								style="width: 12rem"
+							>
+								<img
+									src="https://placehold.co/600x400"
+									class="card-img-top"
+									alt="..."
+								/>
+								<div class="card-body">
+									<h5 class="card-title">Sepatu</h5>
+									<p class="card-text">Rp180.000</p>
+									<p>Bandung</p>
+									<div class="rating d-flex">
+										<img
+											src="./assets/star-svgrepo-com.svg"
+											alt=""
+										/>
+										<p class="m-0">4.9 | Terjual 500+</p>
+									</div>
 								</div>
 							</div>
 						</div>
