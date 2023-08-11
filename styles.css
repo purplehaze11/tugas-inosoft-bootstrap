@@ -1,6 +1,5 @@
 :root {
 	--background: #f7f7f7;
-	--background-card: #eaeaea;
 	--background-footer: #b40a1d;
 	--color-primary: #ec1224;
 	--color-secondary: white;
@@ -14,17 +13,23 @@ body {
 }
 
 header {
-	& #nav-border {
-		border-bottom: var(--border-line);
-	}
+	border-bottom: 1px rgb(209, 209, 209) solid;
 
 	& .navbar-brand {
 		color: var(--color-primary);
 	}
 
-	& span {
+	& #brand-line {
 		color: var(--color-yellow);
 		background-color: var(--color-content);
+	}
+
+	& #kategori {
+		color: var(--color-content);
+	}
+
+	& #search {
+		border: var(--border-line);
 	}
 
 	& #cart {
@@ -47,8 +52,17 @@ header {
 	}
 }
 
+#panel-filter {
+	& a {
+		text-decoration: none;
+		color: var(--color-primary);
+	}
+}
+
 #store-products {
-	.col {
+	& .col {
+		display: flex;
+		justify-content: center;
 		margin: 0.5rem;
 	}
 }
@@ -56,7 +70,7 @@ header {
 .card {
 	margin: 0;
 
-	.rating {
+	& .rating {
 		& img {
 			width: 8%;
 		}
